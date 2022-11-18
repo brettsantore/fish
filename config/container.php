@@ -5,7 +5,7 @@ namespace Santore\Fish\Config;
 use Psr\Container\ContainerInterface;
 use Santore\Fish\Contract\Repository\CatchRepositoryInterface;
 use Santore\Fish\Controller\IndexController;
-use Santore\Fish\Repository\CatchRepository;
+use Santore\Fish\Report\Repository\CatchRepository;
 
 return [
     IndexController::class          => function (ContainerInterface $container) {

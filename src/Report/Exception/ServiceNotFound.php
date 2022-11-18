@@ -1,6 +1,6 @@
 <?php
 
-namespace Santore\Fish\Exception;
+namespace Santore\Fish\Report\Exception;
 
 use RuntimeException;
 use function sprintf;

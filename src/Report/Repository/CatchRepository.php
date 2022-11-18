@@ -1,6 +1,6 @@
 <?php
 
-namespace Santore\Fish\Repository;
+namespace Santore\Fish\Report\Repository;
 
 use Santore\Fish\Contract\Repository\CatchRepositoryInterface;
 

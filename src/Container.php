@@ -4,9 +4,8 @@ namespace Santore\Fish;
 
 use Closure;
 use Psr\Container\ContainerInterface;
-use Santore\Fish\Exception\ServiceNotFound;
+use Santore\Fish\Report\Exception\ServiceNotFound;
 use function array_key_exists;
-use function is_callable;
 
 class Container implements ContainerInterface
 {
