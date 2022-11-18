@@ -10,36 +10,20 @@ class CatchRepository implements CatchRepositoryInterface
     {
         return [
             'rods' => [
-                'LK Legacy'   => [
+                [
+                    'name'    => 'LK Legacy',
                     'catches' => [
-                        [
-                            'species' => 'Green Sunfish',
-                            'count'   => 35,
-                        ],
-                        [
-                            'species' => 'Red-Breasted Sunfish',
-                            'count'   => 2,
-                        ],
-                        [
-                            'species' => 'Black Dace',
-                            'count'   => 3,
-                        ],
-                        [
-                            'species' => 'Creek Chub',
-                            'count'   => 10,
-                        ],
+                        'Green Sunfish'        => 35,
+                        'Red-Breasted Sunfish' => 2,
+                        'Black Dace'           => 3,
+                        'Creek Chub'           => 10,
                     ],
                 ],
-                'Penn Battle' => [
+                [
+                    'name'    => 'Penn Battle',
                     'catches' => [
-                        [
-                            'species' => 'Large Mouth Bass',
-                            'count'   => 1,
-                        ],
-                        [
-                            'species' => 'Striped Bass',
-                            'count'   => 1,
-                        ],
+                        'Large Mouth Bass' => 1,
+                        'Striped Bass'     => 1,
                     ],
                 ],
             ],
