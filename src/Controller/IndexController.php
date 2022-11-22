@@ -9,9 +9,9 @@ use Santore\Fish\Contract\Repository\CatchRepositoryInterface;
 
 class IndexController
 {
-    public function __construct(private readonly CatchRepositoryInterface $catchRepository)
-    {
-
+    public function __construct(
+        private readonly CatchRepositoryInterface $catchRepository
+    ) {
     }
 
     public function __invoke(ServerRequest $request): ResponseInterface
