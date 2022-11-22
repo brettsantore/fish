@@ -1,13 +1,13 @@
 <?php
 
-namespace Santore\Fish\Controller;
+namespace Santore\Fish\Controller\Catch;
 
 use Laminas\Diactoros\Response\JsonResponse;
 use Laminas\Diactoros\ServerRequest;
 use Psr\Http\Message\ResponseInterface;
 use Santore\Fish\Contract\Repository\CatchRepositoryInterface;
 
-class IndexController
+class CatchListController
 {
     public function __construct(
         private readonly CatchRepositoryInterface $catchRepository

@@ -5,7 +5,7 @@ declare(strict_types = 1);
 include_once '../vendor/autoload.php';
 
 use Santore\Fish\Container;
-use Santore\Fish\Controller\IndexController;
+use Santore\Fish\Controller\Catch\CatchListController;
 
 $router = new League\Route\Router();
 
@@ -15,7 +15,7 @@ $strategy = new League\Route\Strategy\ApplicationStrategy();
 $strategy->setContainer($container);
 $router = $router->setStrategy($strategy);
 
-$router->get('/', IndexController::class);
+$router->get('/', CatchListController::class);
 
 $response = $router->dispatch(Laminas\Diactoros\ServerRequestFactory::fromGlobals());
 
