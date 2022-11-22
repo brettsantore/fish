@@ -17,9 +17,27 @@ services:
       - .:/code
       - ./docker/nginx/site.conf:/etc/nginx/conf.d/default.conf
     ports:
-      - "8080:80"
+      - "80:80"
     networks:
       - web
+  db:
+    ports:
+      - "3306:3306"
+    restart: always
+    build:
+      dockerfile: docker/db/Dockerfile
+      context: .
+    environment:
+      MYSQL_ROOT_PASSWORD: 'test_pass' # TODO: Change this
+      MYSQL_USER: 'test'
+      MYSQL_PASS: 'pass'
+    networks:
+      - web
+    volumes:
+      - ./data/db:/var/lib/mysql
+
+volumes:
+  my-datavolume:
 
 networks:
   web:
