@@ -1,6 +1,6 @@
 <?php
 
-namespace Santore\Fish\Controller\Catch;
+namespace Santore\Fish\Controller;
 
 use Laminas\Diactoros\Response\JsonResponse;
 use Laminas\Diactoros\ServerRequest;

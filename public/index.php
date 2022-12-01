@@ -5,7 +5,7 @@ declare(strict_types = 1);
 include_once '../vendor/autoload.php';
 
 use Santore\Fish\Container;
-use Santore\Fish\Controller\Catch\CatchListController;
+use Santore\Fish\Controller\CatchListController;
 
 $router = new League\Route\Router();
 

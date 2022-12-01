@@ -4,7 +4,7 @@ namespace Santore\Fish\Config;
 
 use Psr\Container\ContainerInterface;
 use Santore\Fish\Contract\Repository\CatchRepositoryInterface;
-use Santore\Fish\Controller\Catch\CatchListController;
+use Santore\Fish\Controller\CatchListController;
 use Santore\Fish\Report\Repository\CatchRepository;
 
 return [
