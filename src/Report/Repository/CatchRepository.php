@@ -6,7 +6,7 @@ use Santore\Fish\Contract\Repository\CatchRepositoryInterface;
 
 class CatchRepository implements CatchRepositoryInterface
 {
-    public function getAll()
+    public function getAll(): array
     {
         return [
             2022 => [
