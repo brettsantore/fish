@@ -3,3 +3,4 @@ data/db
 /vendor/
 vendor
 .DS_Store
+scratch.php
