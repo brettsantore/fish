@@ -17,6 +17,7 @@ class CatchRepository implements CatchRepositoryInterface
                         'Red-Breasted Sunfish' => 2,
                         'Black Dace'           => 3,
                         'Creek Chub'           => 12,
+                        'White Crappie'        => 1,
                     ],
                 ],
                 [
